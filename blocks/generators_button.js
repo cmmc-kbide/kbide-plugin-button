@@ -1,7 +1,15 @@
-Blockly.JavaScript['button_block'] = function(block) {
-  var value_button_pin = Blockly.JavaScript.valueToCode(block, 'BUTTON_PIN', Blockly.JavaScript.ORDER_ATOMIC);
-  var variable_button_value = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('BUTTON_VALUE'), Blockly.Variables.NAME_TYPE);
-  // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
-  return code;
-};
+Blockly.JavaScript["button_block"] = function(block) {
+    var text_button_pin = block.getFieldValue("BUTTON_PIN");
+    var variable_button_state = Blockly.JavaScript.variableDB_.getName(
+      block.getFieldValue("BUTTON_STATE"),
+      Blockly.Variables.NAME_TYPE
+    );
+    // TODO: Assemble JavaScript into code variable.
+    var code = `
+	#VARIABLE
+	int ${variable_button_state};	
+	#END
+	 ${variable_button_state} = ${text_button_pin};
+    `;
+    return code;
+  };
