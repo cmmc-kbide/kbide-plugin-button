@@ -1,11 +1,11 @@
 {
   "name" : "kbide-plugin-button",
-  "title": "button",
+  "title": "KY-004 KEY SWITCH MODULE",
   "keywords": "button, esp32, esp8266, arduino",
   "description": "button plugin for KB-IDE",
   "category":"",
   "git": "https://github.com/cmmc-kbide/kbide-plugin-button/",
-  "author": "cmmakerclub",
+  "author": "Prawared",
   "email": "",
   "url": "https://github.com/cmmc-kbide/kbide-plugin-button/",
   "version": "1.0.0",
